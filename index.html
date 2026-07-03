@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+
+        <meta charset="UTF-8"> <!--Responsividade-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="./style.css"> <!--Link do CSS-->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Fonte Roboto-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <title>Devclub - Convert Money</title> <!--Título da Página-->
+
+    </head>
+
+    <body>
+
+        <img id="logo" src="./assets/logo_notas_dolar_elegante.svg" aut="logo-devclub-convert-money"> <!--Add imagem logo-->
+                
+        <main> <!--Cria o quadrado do conversor-->
+
+            <label> <!--Cria o rótulo converter de:-->
+                Converter <b>de</b>
+                <select class="selectA"> <!--Cria uma caixa de seleção-->
+
+                    <option value="real">R$ Real Brasileiro</option> <!--Opções de seleção-->
+                    <option value="dolar">US$ Dólar americano</option>
+                    <option value="euro">€ Euro</option>
+                    <option value="libra">£ Libra</option>
+                    <option value="bitcoin">Bitcoin</option>
+
+                </select>
+            </label>
+
+            <label> <!--Cria o rótulo converter para:-->
+                Converter <b>para</b>
+                <select class="selectB"> <!--Caixa de seleção-->
+
+                    <option value="real">R$ Real Brasileiro</option> <!--Opções de seleção-->
+                    <option value="dolar">US$ Dólar americano</option>
+                    <option value="euro">€ Euro</option>
+                    <option value="libra">£ Libra</option>
+                    <option value="bitcoin">Bitcoin</option>
+                </select>
+            </label>
+
+            <label> <!--Cria o rótulo Valor:-->
+                <b>Valor</b>
+                        
+                <input id="inputCurrency" placeholder="Digite o valor que quer converter">
+            </label>
+
+            <button id="myButton">Converter</button>
+
+            <section>
+                <div class="currencyBox" id="aConverter">
+                    <img src="./assets/Real.png" alt="logo-moeda-a-coverter" id="imageA">
+                    <p class="currency" id="currencyAConverter">Real</p>
+                    <p class="currencyValue" id="valueToConvert">R$ 0,00</p>
+                </div>
+
+                <img class="vector" src="./assets/Vector.png" alt="seta">
+
+                <div class="currencyBox" id="aSerConvertida">
+                    <img src="./assets/Real.png" alt="logo-moeda-a-ser-covertida" id="imageB">
+                    <p class="currency" id="currencyASerConvertida">Dólar Americano</p>
+                    <p class="currencyValue" id="valueConverted">R$ 0,00</p>
+                </div>
+            </section>
+
+        </main>        
+
+    </body>
+
+    <script src="./script.js"></script> <!--Execução do JavaScript-->
+
+</html>
